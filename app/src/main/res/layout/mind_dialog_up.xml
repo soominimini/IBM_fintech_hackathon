@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--tools:context="codingwithmitch.com.dialogfragmentfragment.MainActivity"-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/mind_dialog_image1"
+            android:onClick="mind_dialog_image11"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/heading"
+            android:layout_marginTop="40dp" />
+
+        <ImageButton
+            android:id="@+id/mind_dialog_image3"
+            android:onClick="mind_dialog_image33"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/heading"
+            android:layout_marginTop="180dp" />
+
+        <ImageButton
+            android:id="@+id/mind_dialog_image2"
+            android:onClick="mind_dialog_image22"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/heading"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            />
+
+        <ImageButton
+            android:id="@+id/mind_dialog_image4"
+            android:onClick="mind_dialog_image44"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/heading"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="180dp"/>
+
+        <ImageButton
+            android:id="@+id/mind_dialog_image5"
+            android:onClick="mind_dialog_image55"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/heading"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="320dp"/>
+
+        <TextView
+
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="언제 청소를 시작하시겠습니까?(1/15)"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/input"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heading"
+            android:layout_marginTop="440dp"
+            android:background="@null"
+            android:hint="enter some text..."
+            android:textColor="#000"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/action_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:text="OK"
+            android:textColor="#33bbff"
+            android:visibility="invisible"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/action_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:text="취소"
+            android:textColor="#33bbff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

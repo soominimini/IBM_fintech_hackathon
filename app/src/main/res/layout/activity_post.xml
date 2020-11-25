@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PostActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/windowBackground">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_close"
+                    android:id="@+id/close"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="등록"
+                    android:id="@+id/post"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/activity_post_linearlayouup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="vertical">
+
+            <ToggleButton
+                android:textOn="선택됨"
+                android:textOff="해제됨"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerInside"
+                android:layout_gravity="center"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/image_added"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="요약 설명"
+                android:id="@+id/description"
+                android:maxLines="5"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="종료 날짜"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <DatePicker
+                android:id="@+id/post_datepicker"
+                android:datePickerMode="spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false">
+            </DatePicker>
+
+            <TextView
+                android:layout_marginStart="30dp"
+                android:text="종료시간은 09시로 지정됩니다."
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/activity_post_linear_relative_text"
+                        android:layout_marginStart="30dp"
+                        android:textSize="30dp"
+                        android:text="목표금액 :"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/activity_post_textinput_money"
+                    android:layout_marginTop="-10dp"
+                    android:inputType="numberDecimal"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="30dp"
+                    android:layout_toRightOf="@+id/activity_post_linear_relative_text"/>
+                <TextView
+                    android:layout_marginStart="30dp"
+                    android:textSize="30dp"
+                    android:layout_alignParentRight="true"
+                    android:text="만원"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <TextView
+                android:text="카테고리 선택"
+                android:textSize="20dp"
+                android:layout_marginTop="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ToggleButton
+                    android:id="@+id/activity_post_category1_text"
+                    android:textColor="#FD271E1E"
+                    android:background="#00ff0000"
+                    android:layout_marginStart="40dp"
+                    android:textOn="카테고리1"
+                    android:textOff="카테고리1"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ToggleButton
+                    android:textOn="카테고리2"
+                    android:textOff="카테고리2"
+                    android:id="@+id/activity_post_category2_text"
+                    android:layout_toRightOf="@+id/activity_post_category1_text"
+                    android:textSize="20dp"
+                    android:onClick="category1onClick"
+                    android:background="#00ff0000"
+                    android:textColor="#FD271E1E"
+                    android:layout_marginStart="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ToggleButton
+                    android:textOn="카테고리3"
+                    android:textOff="카테고리3"
+                    android:id="@+id/activity_post_category3_text"
+                    android:layout_toRightOf="@+id/activity_post_category2_text"
+                    android:textSize="20dp"
+                    android:background="#00ff0000"
+                    android:textColor="#FD271E1E"
+                    android:layout_marginStart="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/activity_post_button_mindcheck"
+                android:text="심리검사 진행"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

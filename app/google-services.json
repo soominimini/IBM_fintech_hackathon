@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "600650166196",
+    "firebase_url": "https://izakinsta.firebaseio.com",
+    "project_id": "izakinsta",
+    "storage_bucket": "izakinsta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:600650166196:android:8eee6a98c7ab2605",
+        "android_client_info": {
+          "package_name": "com.izak.instagramtest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "600650166196-ud63a6eqom2d4eelvkpvb1e8p0a93dpj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.izak.instagramtest",
+            "certificate_hash": "dfbab5ddf2b8463d4d6e290d516f572c4dba16e9"
+          }
+        },
+        {
+          "client_id": "600650166196-0do1h1tdk9c0jilb278v74hhar5rqvgj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdmKXWNX_6rqnxGqW5nF2A4LN-HTtQFjc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "600650166196-0do1h1tdk9c0jilb278v74hhar5rqvgj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
